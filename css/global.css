@@ -1,0 +1,152 @@
+body {
+    font-family: '微軟正黑體', Arial;
+    font-size: 16px;
+}
+
+*::-moz-selection {
+    background-color: rgba(30, 39, 46, .1);
+}
+
+*::selection {
+    background-color: rgba(30, 39, 46, .1);
+}
+
+
+/* 回到最上面css js在global.js */
+
+.m-backtotop {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgb(34, 34, 34, .5);
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255, .4);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+.m-backtotop.active {
+    bottom: 60px;
+    opacity: 1;
+}
+
+.m-backtotop>div {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.m-backtotop>div.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 1;
+}
+
+.m-backtotop>div.text {
+    font-size: 16px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+    margin-top: 1px;
+}
+
+.m-backtotop:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(255, 255, 255, 1);
+    bottom: 62px;
+    cursor: pointer;
+    background: #1e272e;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.m-backtotop:hover>div.arrow {
+    transform: translateY(-150%) translateX(-50%);
+    opacity: 0;
+}
+
+.m-backtotop:hover>div.text {
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 1;
+}
+
+
+/* 每頁抬頭介紹文 */
+.page{
+    position: relative;
+}
+.pageTitle {
+    line-height: 40px;
+    font-size: 1.3em;
+    margin: 4.5em 0 0;
+    padding: 2em 0;
+    border-top: .5px solid #456990;    
+    border-bottom: .5px solid #456990;    
+}
+.pageTitle::before{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: '';
+    background: #456990;
+    top: 0px;
+    left: 0px;
+    transition: .8s width ease-in-out;
+}
+.pageTitle:hover::before{
+    width: 100%;
+    transition: .8s width ease-in-out;
+}
+.pageTitle::after{
+    position: absolute;
+    width: 0;
+    height: 3px;
+    content: '';
+    background: #456990;
+    bottom: 0px;
+    right: 0px;
+    transition: .8s width ease-in-out;
+}
+.pageTitle:hover::after{
+    width: 100%;
+    transition: .8s width ease-in-out;
+}
+/* 超連結特效 */
+
+.effect_c:before {
+    /*c=content*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #000;
+    transform: scaleX(0);
+}
+
+.effect_c:hover:before {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width:800px) {
+    /* 手機畫面menu fixed會蓋住   */
+    main {
+        margin-top: 100px;
+        /*63*/
+    }
+}

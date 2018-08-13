@@ -1,0 +1,107 @@
+#article1,#article2{
+  margin-bottom: 3em;
+  clear: both;
+}
+body{  
+  background:#fff;
+}
+#article1{
+  margin: 6em 0;
+}
+
+#article1 section .card {   
+    background-color: #fff;
+    height: 320px;    
+    width: 100%;    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+    transition: all .5s ease;
+    cursor: pointer;
+  }  
+  #article1 section .card:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, .1);
+  }
+  #article1 section .card .cardTop {
+    height: 260px;
+  }
+  #article1 section .card .cardBottom {
+    padding: 12px 28px;
+    text-align: center;
+  }
+  #article1 section .card .cardBottom h2{
+    font-size: 2em;
+  }
+  #article1 section .card.reviews .cardTop img{   
+    width: 100%;
+    height: 96%;
+  }
+  /* -------------- */
+  #article2{
+    margin: 6em 0;
+  }
+
+  #article2 section{
+    width: 100%;    
+  }
+  #article2 span{
+    color: #456990;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 1.3em;
+  }
+  #article2 span:hover{
+    color: #182C61;
+  }
+  #article2 h2{
+    font-size: 2.7em;    
+    position: relative;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    margin-bottom: .5em;
+  }
+  #article2 h2:after{   
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: #456990;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #article2 section img{
+    float: left;
+    width: 40%;
+    height: auto;
+    margin:0 1.3em 1.3em 0;
+    border-radius: 2px;
+  }  
+  #article2 section p{
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-size: 1.3em;
+  }
+  footer{
+    clear: both;
+  }
+
+  /* RWD */
+@media screen and (max-width:760px){
+  #article2 section img{    
+    width: 60%;    
+  }  
+}
+@media screen and (max-width:540px){  
+  #article1 section .card .cardBottom h2{
+    font-size: 1.5em;
+  }
+  #article1 section .card {    
+    height: auto;  
+  } 
+  #article2 section img{    
+    width: 100%;    
+  }  
+  #article2 h2{
+    font-size: 2.5em; 
+    letter-spacing: 2px;    
+  }
+}

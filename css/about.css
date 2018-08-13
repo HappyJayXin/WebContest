@@ -1,0 +1,222 @@
+/* 背景顏色控制 */
+#fu_head{   
+    background: #fff;
+}
+#article1{    
+    padding: 6em 0;
+    background:#fff;
+}
+#article2{ 
+    padding: 6em 0;  
+    background:#f1f2f6;
+}
+#article3{
+    padding: 6em 0;
+    background: #fff;
+}
+/* 團隊介紹 */
+
+#article1 h2,#article2 h2,#article3 h2{
+    text-align: center;
+    font-size: 2.2em;
+    padding: 0 0 2.8em;
+}
+#article1 section{
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    margin-bottom: 2.5em;
+    border-radius: 5px;
+    background-color: #fff;    
+    transition: all .5s;
+}
+#article1 section:hover{
+    box-shadow: 0 4px 7px -3px rgba(0, 0, 0, 0.4);
+}
+#article1 section .image{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 50%;
+    /* border: 3px solid #456990; */
+    overflow: hidden;
+}
+#article1 section .image img{
+    width: 100%;
+    height: 100%;
+}
+#article1 section .content{
+    line-height: 35px;
+}
+#article1 section .content h3{    
+    font-size: 1.9em;
+}
+#article1 section .content p{    
+    font-size: 1.2em;
+}
+#article1 section .content a{
+    text-decoration: none;
+    color: #000;    
+}
+#article1 section .content a i{    
+    font-size: 2em;    
+    transform: rotate(0deg);
+    transition: all .5s ease;
+}
+#article1 section .content a i:hover{
+    transform: rotate(360deg);
+}
+#article1 section .review p{
+    line-height: 25px;
+    font-size: 1.2em;
+}
+/* 聯絡我們 */
+#contact .form{
+    text-align: center;
+    width: 100%;    
+    outline: none;    
+}
+.formName input,.formEmail input{
+    width: 50%;
+    font-size: 1.2em;    
+    margin-bottom: 0.8em;
+}
+.formMsg textarea{    
+    max-width: 50%;
+    min-width: 50%;
+    height: 100px;
+    max-height: 300px;
+    min-height: 48px;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+}
+/* 當焦點時css */
+.form input:focus,.form textarea:focus{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.form input:focus,.form textarea:focus{
+    box-shadow: 0 0 6px rgb(69,105,144);    
+    border: 1.5px solid rgb(69,105,144) !important;
+}
+.formbtn button{
+    width: 180px;    
+}
+.formName input,.formEmail input,.formMsg textarea{
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    padding: 10px 15px;
+}
+/* 警告圖示 */
+#contact .form i{
+    color: #e84118;
+    font-size: 1.4em;
+    margin-left: 5px;
+}
+#contact .form i:hover{
+    color: #d63031;
+}
+.alert{
+    border: 1.5px solid #e84118 !important;
+}
+.alertHide{
+    visibility: hidden;      
+}
+/* 強調 */
+
+.sswing{-webkit-animation:sswing 1s ease;animation:sswing 1s ease;-webkit-animation-iteration-count:1;animation-iteration-count:1}@keyframes sswing{15%{-webkit-transform:translateX(6px);transform:translateX(5px)}30%{-webkit-transform:translateX(-6px);transform:translateX(-5px)}50%{-webkit-transform:translateX(4px);transform:translateX(4px)}65%{-webkit-transform:translateX(-4px);transform:translateX(-4px)}80%{-webkit-transform:translateX(3px);transform:translateX(3px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}
+
+/* 參考資料 */
+.custom-counter {
+    margin:2px;
+    padding: 0;
+    list-style-type: none;
+}  
+  .custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 14px;
+}  
+  .custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #7597BD;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+.reference{
+    width: 100%;
+    height: 280px;
+    overflow: auto;
+    overflow-y:hidden;          
+}
+.reference:hover{
+    overflow-y: scroll;    
+}
+/* 超連結設定 */
+.reference ol li a{    
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+.reference ol li a::before,
+.reference ol li a::after{
+    content: '';
+    position: absolute;
+    transition: transform 0.5s ease;
+} 
+.aiImg{
+    width: 100%;
+    height: 300px;
+}
+.aiImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* RWD */
+@media screen and (max-width:992px){
+    #article1 section{text-align: center;padding: 35px 10px;}
+    #article1 section .image{margin: 0 auto;}
+    .formName input,.formEmail input{width:80%;}
+     .formMsg textarea{
+         max-width: 80%;
+         min-width: 80%;
+         height: 100px;               
+    }
+    /* 參考資料卷軸與圖片設定 */
+    .reference{        
+        height: 230px;        
+    }
+    .aiImg{       
+        height: 250px;
+    }
+}
+@media screen and (max-width:576px){
+    #article1 section .content a i{font-size: 2.5em;}
+    .formName input,.formEmail input{
+       padding: 12px 18px;
+        width: 100%;            
+    }
+    .formMsg textarea{  
+        padding: 12px 18px;  
+        max-width: 100%;
+        min-width: 100%;
+        height: 100px;               
+    }
+    /* 參考資料卷軸與圖片設定 */
+    .reference,.aiImg{        
+        height: auto;        
+    }   
+    .custom-counter {
+        margin-top: 1.5em;        
+    }  
+    .reference:hover{
+        overflow-y: hidden;    
+    }
+}    

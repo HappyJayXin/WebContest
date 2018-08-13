@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/robot.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/simpletextrotator.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>關於</title>
+</head>
+
+<body>
+    <!-- 載入畫面 另外有CSS JS檔-->
+    <div class="loader-wrap" id="loading">
+        <div class="loader">
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+        </div>
+    </div>
+    <!-- menu   -->
+    <header>
+        <div class="menu_bar">
+            <a href="index.html">
+                <img src="img/logo1.png" alt="" srcset="">
+            </a>
+            <a href="#" class="bt-menu">
+                <div class="icon">
+                    <div class="hamburger"></div>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="navber">
+                <div>
+                    <a href="index.html">首頁</a>
+                </div>
+                <div id="test">
+                    <a href="introduce.html">AI介紹</a>
+                </div>
+                <div>
+                    <a href="application.html">AI應用</a>
+                </div>
+                <div>
+                    <a href="futuretrend.html">未來趨勢</a>
+                </div>
+                <div class="thisPos">
+                    <a href="#">關於</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="hide">
+        <div id="fu_head">
+            <div class="container">
+                <div class="page">
+                    <p class="pageTitle"></p>
+                    <!--class在global.css-->
+                </div>
+            </div>
+        </div>
+        <!-- 團隊介紹 -->
+        <article id="article1" class="animatedParent animateOnce" data-appear-top-offset='-350'>
+            <div class="container">
+                <h2></h2>
+                <section class="animated fadeInDown delay-250">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="image">
+                                <img src="img/person1.jpg" alt="" class="animated rotateIn delay-750">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 align-self-center">
+                            <div class="content c1">
+                                <h3 class="animated bounceInRight delay-750">阿宇</h3>
+                                <p class="animated bounceInRight delay-1000"></p>
+                                <a href="https://www.instagram.com/xin_gyu/">
+                                    <i class="fab fa-instagram animated bounceInRight delay-1250"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 align-self-center">
+                            <div class="review">
+                                <p id="aPerson" class="animated flipInX delay-750">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="animated fadeInDown">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="image">
+                                <img src="img/person2.jpg" alt="" class="animated rotateIn delay-750">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 align-self-center">
+                            <div class="content c2">
+                                <h3 class="animated bounceInRight delay-1500">阿丞</h3>
+                                <p class="animated bounceInRight delay-1750"></p>
+                                <a href="https://www.instagram.com/lichengg/">
+                                    <i class="fab fa-instagram animated bounceInRight delay-2000"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 align-self-center">
+                            <div class="review">
+                                <p id="bPerson" class="animated flipInX delay-750">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <!-- 表單 -->
+        <article id="article2">
+            <div class="container">
+                <h2></h2>
+                <form action="#" id="contact">
+                    <div class="formName form">
+                        <input id="name" type="text" placeholder="">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="formEmail form">
+                        <input id="email" type="text" placeholder="">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="formMsg form">
+                        <textarea id="message" placeholder=""></textarea>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="formbtn form">
+                        <button id="contactBtn" class="mbutton mbtn2"></button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <!-- 參考資料 -->
+        <article id="article3">
+            <div class="container">
+                <h2></h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="aiImg animatedParent animateOnce">
+                            <img src="img/bg2.jpg" alt="" class="animated flipInX alower">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="reference">
+                            <ol class="custom-counter">
+                                <li>
+                                    <!-- 超連結特效->global.css -->
+                                    <a class="effect_c" href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">維基百科-人工智慧</a>
+                                    <li>
+                                        <a href="https://www.bnext.com.tw/search/tag/AI">數位時代-人工智慧</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.inside.com.tw/2016/08/10/what-is-artificial-intelligence-%EF%BC%9F">硬塞科技字典-什麼是人工智慧</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://technews.tw/2015/02/08/robot-the-big-talk/">科技新報-當機器人具有自我知覺</a>
+                                    </li>
+                                    <li>
+                                        <a href="
+                                    https://kknews.cc/zh-tw/tech/krzraxv.html">每日頭條-人工智慧已經有知覺了?</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ithome.com.tw/news/123662">iThome-國產AI應用</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ettoday.net/news/20180410/1147453.htm">EDtoday-AI應用無所不在</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ithome.com.tw/news/115590">ithome-AI應用大爆發</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://dahetalk.com/2018/04/08/">大和有話說-完整解析AI人工智慧</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bnext.com.tw/article/47355/ai-2018-annual-forecast">數位時代-2018年AI趨勢大預測</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bnext.com.tw/article/47769/gartner-ai-jobs-11-trends-prediction">數位時代-11個趨勢預測</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://iknow.stpi.narl.org.tw/Post/Read.aspx?PostID=13837">科技產業資訊室-未來 AI 發展</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/">fiture of liv-介紹人工智慧</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.pexels.com/">圖片來源 1 : PEXELS</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://unsplash.com/">圖片來源 2 : Unsplash</a>
+                                    </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- footer -->
+    <footer class="hide">
+        <div id="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" id="footerLeft">
+                        <ul>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-envelope"></i> 信箱</span>4a490063@stust.edu.tw
+                            </li>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-phone"></i> 電話</span>0920181208
+                            </li>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-comments"></i> 關於</span>
+                                <a class="effect" href="about.html">ReadMore</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ******* -->
+                    <div class="col-md-6" id="footerRight">
+                        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                            <li>
+                                <a href="https://codepen.io/hapy63/#">
+                                    <i class="fab fa-codepen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/HappyJayXin">
+                                    <i class="fab fa-github "></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <button id="btnChinese" class="fbutton mbtn2">中文</button>
+                        <button id="btnEnglish" class="fbutton mbtn2">英文</button>
+                        <br>
+                        <span>Copyright © 2018 南臺科大資管系-南臺之光團隊 版權所有</span>
+                        <br>
+                        <span>瀏覽器建議使用
+                            <span class="rotate" style="font-weight: 800;">FireFox(6.x),Chrome(6.x)</span>，配合1920x1080解析度</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 回到最上面 -->
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="text">
+            回頂
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/jquery.simple-text-rotator.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>

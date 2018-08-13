@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/robot.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/futuretrend.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/simpletextrotator.css">
+    <link rel="stylesheet" href="css/robot.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>未來趨勢</title>
+</head>
+
+<body>
+    <!-- 載入畫面 另外有CSS JS檔-->
+    <div class="loader-wrap" id="loading">
+        <div class="loader">
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+            <span class="loader-item"></span>
+        </div>
+    </div>
+    <!-- menu   -->
+    <header>
+        <div class="menu_bar">
+            <a href="index.html">
+                <img src="img/logo1.png" alt="" srcset="">
+            </a>
+            <a href="#" class="bt-menu">
+                <div class="icon">
+                    <div class="hamburger"></div>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="navber">
+                <div>
+                    <a href="index.html">首頁</a>
+                </div>
+                <div id="test">
+                    <a href="introduce.html">AI介紹</a>
+                </div>
+                <div>
+                    <a href="application.html">AI應用</a>
+                </div>
+                <div class="thisPos">
+                    <a href="#">未來趨勢</a>
+                </div>
+                <div>
+                    <a href="about.html">關於</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="hide">
+        <div id="fu_head" class="container">
+            <div class="page">
+                <p class="pageTitle"><!--class在global.css--></p>
+            </div>
+        </div>
+        <article id="article1" class="animatedParent animateOnce">
+            <div class="container">
+                <div class="tab tab1 animated fadeInUpShort">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label for="tab-one"></label>
+                    <div class="tab-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="tab tab2 animated fadeInUpShort delay-250">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label for="tab-two"></label>
+                    <div class="tab-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="tab tab3 animated fadeInUpShort delay-500">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label for="tab-three"></label>
+                    <div class="tab-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="tab tab4 animated fadeInUpShort delay-750">
+                    <input id="tab-four" type="checkbox" name="tabs">
+                    <label for="tab-four"></label>
+                    <div class="tab-content">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="tab tab5 animated fadeInUpShort delay-1000">
+                    <input id="tab-five" type="checkbox" name="tabs">
+                    <label for="tab-five"></label>
+                    <div class="tab-content">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="article2" class="animatedParent animateOnce" data-appear-top-offset='-400'>
+            <div class="container">
+                <div class="header">
+                    <h2></h2>
+                    <p>
+                        <span id="chartWord"></span> ( 資料來源: <a class="effect_c" href="http://www.qdaily.com/articles/48677.html" target="_blank">好奇心研究所</a> )
+                        <!-- 超連結特效->global.css -->
+                    </p>
+                </div>
+                <div class="bar-chart a1">
+                    <span class="bar-chart--inner animated fadeInUpShort" style="width:100%;">
+                        <span id="barData1">1078</span>
+                    </span>
+                    <span class="bar-chart--text animated fadeIn"></span>
+                </div>
+                <div class="bar-chart a2">
+                    <span class="bar-chart--inner animated fadeInUpShort delay-250" style="width:60%;">
+                        <span id="barData2">591</span>
+                    </span>
+                    <span class="bar-chart--text animated fadeIn delay-250"></span>
+                </div>
+                <div class="bar-chart a3">
+                    <span class="bar-chart--inner animated fadeInUpShort delay-500" style="width:18%;">
+                        <span id="barData3">138</span>
+                    </span>
+                    <span class="bar-chart--text animated fadeIn delay-500"></span>
+                </div>
+                <div class="bar-chart a4">
+                    <span class="bar-chart--inner animated fadeInUpShort delay-750" style="width:11.5%;">
+                        <span id="barData4">74</span>
+                    </span>
+                    <span class="bar-chart--text animated fadeIn delay-750"></span>
+                </div>
+                <div class="bar-chart a5">
+                    <span class="bar-chart--inner animated fadeInUpShort delay-1000" style="width:10%;">
+                        <span id="barData5">70</span>
+                    </span>
+                    <span class="bar-chart--text animated fadeIn delay-1000"></span>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- footer -->
+    <footer class="hide">
+        <div id="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" id="footerLeft">
+                        <ul>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-envelope"></i> 信箱</span>4a490063@stust.edu.tw
+                            </li>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-phone"></i> 電話</span>09123456789
+                            </li>
+                            <li>
+                                <span class="bage">
+                                    <i class="fas fa-comments"></i> 關於</span>
+                                <a class="effect" href="about.html">ReadMore</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ******* -->
+                    <div class="col-md-6" id="footerRight">
+                        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                            <li>
+                                <a href="https://codepen.io/hapy63/#">
+                                    <i class="fab fa-codepen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/HappyJayXin">
+                                    <i class="fab fa-github "></i>
+                                </a>
+                            </li>     
+                        </ul>
+                        <button id="btnChinese" class="fbutton mbtn2" id="btnc">中文</button>
+                        <button id="btnEnglish" class="fbutton mbtn2" id="btne">英文</button>
+                        <br>
+                        <span>Copyright © 2018 南臺科大資管系-南臺之光團隊 版權所有</span>
+                        <br>
+                        <span>瀏覽器建議使用
+                            <span class="rotate" style="font-weight: 800;">FireFox(6.x),Chrome(6.x)</span>，配合1920x1080解析度</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 回到最上面 -->
+    <div class="m-backtotop" aria-hidden="true">
+        <div class="arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="text">
+            回頂
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/jquery.simple-text-rotator.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/futuretrend.js"></script>
+</body>
+
+</html>

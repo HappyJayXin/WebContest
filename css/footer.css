@@ -1,0 +1,172 @@
+footer {
+    width: 100%;
+    height: auto;
+    background: #456990;
+}
+
+#footer {
+    padding: 20px 0;
+}
+
+
+/* 左 */
+
+#footerLeft ul {
+    list-style: none;
+}
+
+#footerLeft ul li {
+    margin: 30px 0;
+    color: #fff;
+}
+
+#footerLeft ul li .bage {
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 3px 15px;
+    margin-right: 1em;
+    border-radius: 3px;
+    background: #fff;
+    color: #456990;
+}
+
+
+/* ReadMore hover效果 */
+
+.effect:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* 關於的連結 */
+
+#footerLeft ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footerLeft ul li a::before,
+#footerLeft ul li a::after {
+    content: '';
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.effect::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+}
+
+
+/* 右 */
+
+#footerRight {
+    text-align: right;
+}
+
+#footerRight button {
+    width: 100px !important;
+    margin-bottom: 15px;
+}
+
+#footerRight span {
+    line-height: 20px;
+    color: #fff;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-inline li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+/*icons大小*/
+
+.social-icons .fab {
+    font-size: 1.8em;
+}
+
+
+/*icons 圓大小和顏色*/
+
+.social-icons .fab {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #456990;
+    color: #456990;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fab {
+    border-radius: 50%;
+}
+
+.social-icons.icon-rounded .fab {
+    border-radius: 5px;
+}
+
+.social-icons.icon-flat .fab {
+    border-radius: 0;
+}
+
+.social-icons.icon-rotate .fab:hover,
+.social-icons.icon-rotate .fab:active {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+}
+
+.fa-codepen,
+.fa-github{
+    background: #fff;
+}
+
+
+/* RWD */
+
+
+/* 平板時信箱跳下一行顯示 */
+
+@media screen and (max-width:992px) {
+    #footerLeft ul li:nth-child(1) span {
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #footer {
+        padding: 20px 0;
+    }
+    #footerLeft {
+        display: none;
+    }
+    #footerRight {
+        text-align: center;
+    }
+    #footerRight button {
+        font-size: 1.3em;
+        width: 110px !important;
+        height: 42px;
+    }
+}
